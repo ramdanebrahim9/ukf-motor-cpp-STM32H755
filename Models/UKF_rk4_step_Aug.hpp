@@ -1,0 +1,5 @@
+#pragma once
+#include <Eigen/Dense>
+
+Eigen::Vector4d UKF_rk4_step_Aug(const Eigen::Vector4d& x, double V,
+                                 double i_rk4_k, double omega_rk4_k, double dt);
